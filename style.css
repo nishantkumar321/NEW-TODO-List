@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    width: 450px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    text-shadow: 1px 1px 3px #aaa;
+}
+
+.add-form input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.add-form input[type="text"]:focus {
+    border-color: #a6c1ee;
+    box-shadow: 0 0 10px rgba(166,193,238,0.6);
+}
+
+.add-form button {
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(145deg, #a6c1ee, #fbc2eb);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+.add-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f5f7fa, #e4e9f0);
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.1), -3px -3px 8px rgba(255,255,255,0.7);
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateY(-2px);
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.update-form input {
+    width: 140px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.update-form input:focus {
+    border-color: #fbc2eb;
+    box-shadow: 0 0 8px rgba(251,194,235,0.6);
+}
+
+.update-form button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(145deg, #fbc2eb, #a6c1ee);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+.update-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+.delete-btn {
+    color: white;
+    background: #FF6B6B;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #FF4B4B;
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+span {
+    cursor: pointer;
+}
